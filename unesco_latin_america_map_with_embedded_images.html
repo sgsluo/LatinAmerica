@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6537ba4ce6a8631a7a51a775f9e8deba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6537ba4ce6a8631a7a51a775f9e8deba" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6537ba4ce6a8631a7a51a775f9e8deba = L.map(
+                "map_6537ba4ce6a8631a7a51a775f9e8deba",
+                {
+                    center: [-15.0, -60.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d789bd7ce95631d34a080083144c935d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var marker_dba0080bac087b0de71a8505dc25841b = L.marker(
+                [20.6843, -88.5678],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_12c5c9a7a768185bba5ef058514baa4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dba0080bac087b0de71a8505dc25841b.setIcon(icon_12c5c9a7a768185bba5ef058514baa4e);
+        
+    
+        var popup_474b401fdb8165e112e9ace4046efae2 = L.popup({"maxWidth": 250});
+
+        
+            var html_662e54d7751e5dee3b3889a63f337055 = $(`<div id="html_662e54d7751e5dee3b3889a63f337055" style="width: 100.0%; height: 100.0%;"><b>Chichen Itza</b><br><img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Chichen_Itza_3.jpg" width="220"><br><a href="https://en.wikipedia.org/wiki/Chichen_Itza" target="_blank">Learn more</a><br><i>Mexico – Cultural Site</i></div>`)[0];
+            popup_474b401fdb8165e112e9ace4046efae2.setContent(html_662e54d7751e5dee3b3889a63f337055);
+        
+
+        marker_dba0080bac087b0de71a8505dc25841b.bindPopup(popup_474b401fdb8165e112e9ace4046efae2)
+        ;
+
+        
+    
+    
+            marker_dba0080bac087b0de71a8505dc25841b.bindTooltip(
+                `<div>
+                     Chichen Itza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8384bafd338b07418fc60fc6097a747 = L.marker(
+                [19.6925, -98.8438],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_205a9a0b2889af251bc9c4667deb6da0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d8384bafd338b07418fc60fc6097a747.setIcon(icon_205a9a0b2889af251bc9c4667deb6da0);
+        
+    
+        var popup_941de9c868d589a3bb5486ebb0d3a6cf = L.popup({"maxWidth": 250});
+
+        
+            var html_73d611f5b56edd766de9d1abeeaeef31 = $(`<div id="html_73d611f5b56edd766de9d1abeeaeef31" style="width: 100.0%; height: 100.0%;"><b>Teotihuacan</b><br><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Teotihuacan_Piramide_del_Sol.JPG" width="220"><br><a href="https://en.wikipedia.org/wiki/Teotihuacan" target="_blank">Learn more</a><br><i>Mexico – Cultural Site</i></div>`)[0];
+            popup_941de9c868d589a3bb5486ebb0d3a6cf.setContent(html_73d611f5b56edd766de9d1abeeaeef31);
+        
+
+        marker_d8384bafd338b07418fc60fc6097a747.bindPopup(popup_941de9c868d589a3bb5486ebb0d3a6cf)
+        ;
+
+        
+    
+    
+            marker_d8384bafd338b07418fc60fc6097a747.bindTooltip(
+                `<div>
+                     Teotihuacan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecd7a2cae9f2b1befb91870467d881f8 = L.marker(
+                [19.3722, -87.7458],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_3ac337ffe637f3d0e3dd7900198dd026 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ecd7a2cae9f2b1befb91870467d881f8.setIcon(icon_3ac337ffe637f3d0e3dd7900198dd026);
+        
+    
+        var popup_dd45067329b8ed5dd5c785ca60aa8712 = L.popup({"maxWidth": 250});
+
+        
+            var html_42cddb9da97268d4bf49de694aab52cc = $(`<div id="html_42cddb9da97268d4bf49de694aab52cc" style="width: 100.0%; height: 100.0%;"><b>Sian Ka’an</b><br><img src="https://whc.unesco.org/uploads/thumbs/site_0410_0001-750-750-20210910122109.jpg" width="220"><br><a href="https://whc.unesco.org/en/list/410/" target="_blank">Learn more</a><br><i>Mexico – Natural Site</i></div>`)[0];
+            popup_dd45067329b8ed5dd5c785ca60aa8712.setContent(html_42cddb9da97268d4bf49de694aab52cc);
+        
+
+        marker_ecd7a2cae9f2b1befb91870467d881f8.bindPopup(popup_dd45067329b8ed5dd5c785ca60aa8712)
+        ;
+
+        
+    
+    
+            marker_ecd7a2cae9f2b1befb91870467d881f8.bindTooltip(
+                `<div>
+                     Sian Ka’an
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e94a542c5bf49290b3872f9eac8242aa = L.marker(
+                [-25.6953, -54.4367],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_ff955d170bc1c0ed0d18f37936391467 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e94a542c5bf49290b3872f9eac8242aa.setIcon(icon_ff955d170bc1c0ed0d18f37936391467);
+        
+    
+        var popup_59611c3b120b7e69d1289bdf7d53d167 = L.popup({"maxWidth": 250});
+
+        
+            var html_776d77557b69b9967489cdfab2bb92b2 = $(`<div id="html_776d77557b69b9967489cdfab2bb92b2" style="width: 100.0%; height: 100.0%;"><b>Iguaçu National Park</b><br><a href="https://en.wikipedia.org/wiki/Igua%C3%A7u_National_Park" target="_blank">Learn more</a><br><i>Brazil – Natural Site</i></div>`)[0];
+            popup_59611c3b120b7e69d1289bdf7d53d167.setContent(html_776d77557b69b9967489cdfab2bb92b2);
+        
+
+        marker_e94a542c5bf49290b3872f9eac8242aa.bindPopup(popup_59611c3b120b7e69d1289bdf7d53d167)
+        ;
+
+        
+    
+    
+            marker_e94a542c5bf49290b3872f9eac8242aa.bindTooltip(
+                `<div>
+                     Iguaçu National Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b30052db639e6598a5b275a48ae6482e = L.marker(
+                [-12.9714, -38.5014],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_6bef2ce8fc8aed9c8b6ee2f5bd4aab78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b30052db639e6598a5b275a48ae6482e.setIcon(icon_6bef2ce8fc8aed9c8b6ee2f5bd4aab78);
+        
+    
+        var popup_17394e6c7c487717d4841ae508556eaf = L.popup({"maxWidth": 250});
+
+        
+            var html_069d405ba4cf01832bd5ada5f606dce3 = $(`<div id="html_069d405ba4cf01832bd5ada5f606dce3" style="width: 100.0%; height: 100.0%;"><b>Historic Centre of Salvador de Bahia</b><br><a href="https://en.wikipedia.org/wiki/Historic_Center_%28Salvador%2C_Bahia%29" target="_blank">Learn more</a><br><i>Brazil – Cultural Site</i></div>`)[0];
+            popup_17394e6c7c487717d4841ae508556eaf.setContent(html_069d405ba4cf01832bd5ada5f606dce3);
+        
+
+        marker_b30052db639e6598a5b275a48ae6482e.bindPopup(popup_17394e6c7c487717d4841ae508556eaf)
+        ;
+
+        
+    
+    
+            marker_b30052db639e6598a5b275a48ae6482e.bindTooltip(
+                `<div>
+                     Historic Centre of Salvador de Bahia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f127dc5a19aa5cb99ed1cb46236fdf9e = L.marker(
+                [-16.5095, -56.2826],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_f739e8817533f411f9f4cb0ecd2a74a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f127dc5a19aa5cb99ed1cb46236fdf9e.setIcon(icon_f739e8817533f411f9f4cb0ecd2a74a6);
+        
+    
+        var popup_f91a7d5757aa948b76cfffd22ac89f85 = L.popup({"maxWidth": 250});
+
+        
+            var html_5367b19c95f986a2ed0233e576b2ea2d = $(`<div id="html_5367b19c95f986a2ed0233e576b2ea2d" style="width: 100.0%; height: 100.0%;"><b>Pantanal Conservation Area</b><br><a href="https://en.wikipedia.org/wiki/Pantanal" target="_blank">Learn more</a><br><i>Brazil – Natural Site</i></div>`)[0];
+            popup_f91a7d5757aa948b76cfffd22ac89f85.setContent(html_5367b19c95f986a2ed0233e576b2ea2d);
+        
+
+        marker_f127dc5a19aa5cb99ed1cb46236fdf9e.bindPopup(popup_f91a7d5757aa948b76cfffd22ac89f85)
+        ;
+
+        
+    
+    
+            marker_f127dc5a19aa5cb99ed1cb46236fdf9e.bindTooltip(
+                `<div>
+                     Pantanal Conservation Area
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1dc386f7ffbdd4d6df82f7ea21826ae4 = L.marker(
+                [-15.7942, -47.8822],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_159423f04b8237c10602cd1c245fd788 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1dc386f7ffbdd4d6df82f7ea21826ae4.setIcon(icon_159423f04b8237c10602cd1c245fd788);
+        
+    
+        var popup_8ed2bb88e48b3ed9ac86ba9fbb6b090f = L.popup({"maxWidth": 250});
+
+        
+            var html_153aceaf00b5783e98625558329a2b08 = $(`<div id="html_153aceaf00b5783e98625558329a2b08" style="width: 100.0%; height: 100.0%;"><b>Brasília</b><br><a href="https://en.wikipedia.org/wiki/Bras%C3%ADlia" target="_blank">Learn more</a><br><i>Brazil – Cultural Site</i></div>`)[0];
+            popup_8ed2bb88e48b3ed9ac86ba9fbb6b090f.setContent(html_153aceaf00b5783e98625558329a2b08);
+        
+
+        marker_1dc386f7ffbdd4d6df82f7ea21826ae4.bindPopup(popup_8ed2bb88e48b3ed9ac86ba9fbb6b090f)
+        ;
+
+        
+    
+    
+            marker_1dc386f7ffbdd4d6df82f7ea21826ae4.bindTooltip(
+                `<div>
+                     Brasília
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d73225deada21d41a5c41d7a1691a14 = L.marker(
+                [-13.1631, -72.545],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_e2c10f0ba0e91260c3d9b36edb8cad6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d73225deada21d41a5c41d7a1691a14.setIcon(icon_e2c10f0ba0e91260c3d9b36edb8cad6c);
+        
+    
+        var popup_c7e5d5c39a68452538903354817811cc = L.popup({"maxWidth": 250});
+
+        
+            var html_a663586e25d7e6e37ef75bd96364a99c = $(`<div id="html_a663586e25d7e6e37ef75bd96364a99c" style="width: 100.0%; height: 100.0%;"><b>Machu Picchu</b><br><img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Machu_Picchu%2C_Peru.jpg" width="220"><br><a href="https://en.wikipedia.org/wiki/Machu_Picchu" target="_blank">Learn more</a><br><i>Peru – Cultural Site</i></div>`)[0];
+            popup_c7e5d5c39a68452538903354817811cc.setContent(html_a663586e25d7e6e37ef75bd96364a99c);
+        
+
+        marker_3d73225deada21d41a5c41d7a1691a14.bindPopup(popup_c7e5d5c39a68452538903354817811cc)
+        ;
+
+        
+    
+    
+            marker_3d73225deada21d41a5c41d7a1691a14.bindTooltip(
+                `<div>
+                     Machu Picchu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b343edc71484910496583cf00f7904d6 = L.marker(
+                [-14.739, -75.13],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_060612e494c7d7473a65e375781c1254 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b343edc71484910496583cf00f7904d6.setIcon(icon_060612e494c7d7473a65e375781c1254);
+        
+    
+        var popup_1524677c60b02844453a7036d6d3d4ac = L.popup({"maxWidth": 250});
+
+        
+            var html_13408f9c6571f2ae81c15513db27c509 = $(`<div id="html_13408f9c6571f2ae81c15513db27c509" style="width: 100.0%; height: 100.0%;"><b>Nazca Lines</b><br><a href="https://en.wikipedia.org/wiki/Nazca_Lines" target="_blank">Learn more</a><br><i>Peru – Cultural Site</i></div>`)[0];
+            popup_1524677c60b02844453a7036d6d3d4ac.setContent(html_13408f9c6571f2ae81c15513db27c509);
+        
+
+        marker_b343edc71484910496583cf00f7904d6.bindPopup(popup_1524677c60b02844453a7036d6d3d4ac)
+        ;
+
+        
+    
+    
+            marker_b343edc71484910496583cf00f7904d6.bindTooltip(
+                `<div>
+                     Nazca Lines
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba8db63a0d9b9c34f8bcf53870304057 = L.marker(
+                [-12.0464, -77.0428],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_35b0e5736fca5fdebc86944229c1a31f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba8db63a0d9b9c34f8bcf53870304057.setIcon(icon_35b0e5736fca5fdebc86944229c1a31f);
+        
+    
+        var popup_fff3d754d043d48c3f6cbb3cca8b59a9 = L.popup({"maxWidth": 250});
+
+        
+            var html_8bc6830c37ccf834195112dd44fd3d9b = $(`<div id="html_8bc6830c37ccf834195112dd44fd3d9b" style="width: 100.0%; height: 100.0%;"><b>Historic Centre of Lima</b><br><a href="https://en.wikipedia.org/wiki/Historic_Centre_of_Lima" target="_blank">Learn more</a><br><i>Peru – Cultural Site</i></div>`)[0];
+            popup_fff3d754d043d48c3f6cbb3cca8b59a9.setContent(html_8bc6830c37ccf834195112dd44fd3d9b);
+        
+
+        marker_ba8db63a0d9b9c34f8bcf53870304057.bindPopup(popup_fff3d754d043d48c3f6cbb3cca8b59a9)
+        ;
+
+        
+    
+    
+            marker_ba8db63a0d9b9c34f8bcf53870304057.bindTooltip(
+                `<div>
+                     Historic Centre of Lima
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3c85bf122a91f8560b33de70b96974d = L.marker(
+                [10.391, -75.4794],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_e2ff14f544b318ffff488b86c43d61b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a3c85bf122a91f8560b33de70b96974d.setIcon(icon_e2ff14f544b318ffff488b86c43d61b5);
+        
+    
+        var popup_bbab557783486085c541288c4e533ede = L.popup({"maxWidth": 250});
+
+        
+            var html_a659de4b92b89b326fea1b0127c17575 = $(`<div id="html_a659de4b92b89b326fea1b0127c17575" style="width: 100.0%; height: 100.0%;"><b>Cartagena’s Port, Fortresses, and Monuments</b><br><a href="https://en.wikipedia.org/wiki/Cartagena%2C_Colombia" target="_blank">Learn more</a><br><i>Colombia – Cultural Site</i></div>`)[0];
+            popup_bbab557783486085c541288c4e533ede.setContent(html_a659de4b92b89b326fea1b0127c17575);
+        
+
+        marker_a3c85bf122a91f8560b33de70b96974d.bindPopup(popup_bbab557783486085c541288c4e533ede)
+        ;
+
+        
+    
+    
+            marker_a3c85bf122a91f8560b33de70b96974d.bindTooltip(
+                `<div>
+                     Cartagena’s Port, Fortresses, and Monuments
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_faf57b1e1858bdcc4c40f17eb4501a0c = L.marker(
+                [4.6, -75.7],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_7b4aa5771058c577d65bf75d56f75631 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_faf57b1e1858bdcc4c40f17eb4501a0c.setIcon(icon_7b4aa5771058c577d65bf75d56f75631);
+        
+    
+        var popup_22336e91af03249b9a0531092d824202 = L.popup({"maxWidth": 250});
+
+        
+            var html_1534689154f7291ce0a66f2c3b77f944 = $(`<div id="html_1534689154f7291ce0a66f2c3b77f944" style="width: 100.0%; height: 100.0%;"><b>Coffee Cultural Landscape of Colombia</b><br><a href="https://en.wikipedia.org/wiki/Coffee_Cultural_Landscape" target="_blank">Learn more</a><br><i>Colombia – Cultural Site</i></div>`)[0];
+            popup_22336e91af03249b9a0531092d824202.setContent(html_1534689154f7291ce0a66f2c3b77f944);
+        
+
+        marker_faf57b1e1858bdcc4c40f17eb4501a0c.bindPopup(popup_22336e91af03249b9a0531092d824202)
+        ;
+
+        
+    
+    
+            marker_faf57b1e1858bdcc4c40f17eb4501a0c.bindTooltip(
+                `<div>
+                     Coffee Cultural Landscape of Colombia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_317bd611610b1e3f025f8ca0013f12cd = L.marker(
+                [3.9833, -81.6],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_9b7620d3b80ac218e7da71ef961c7fb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_317bd611610b1e3f025f8ca0013f12cd.setIcon(icon_9b7620d3b80ac218e7da71ef961c7fb0);
+        
+    
+        var popup_45320286326b8e75dc3b7308bbcc3f26 = L.popup({"maxWidth": 250});
+
+        
+            var html_82e60cf5563d82edf98cc1017b4f89f0 = $(`<div id="html_82e60cf5563d82edf98cc1017b4f89f0" style="width: 100.0%; height: 100.0%;"><b>Malpelo Fauna and Flora Sanctuary</b><br><a href="https://en.wikipedia.org/wiki/Malpelo_Island" target="_blank">Learn more</a><br><i>Colombia – Natural Site</i></div>`)[0];
+            popup_45320286326b8e75dc3b7308bbcc3f26.setContent(html_82e60cf5563d82edf98cc1017b4f89f0);
+        
+
+        marker_317bd611610b1e3f025f8ca0013f12cd.bindPopup(popup_45320286326b8e75dc3b7308bbcc3f26)
+        ;
+
+        
+    
+    
+            marker_317bd611610b1e3f025f8ca0013f12cd.bindTooltip(
+                `<div>
+                     Malpelo Fauna and Flora Sanctuary
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7deaccc4a3d8e5db424563157cf4ffb0 = L.marker(
+                [-50.5, -73.25],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_a1e9566f52baff3f3d0a33ffeab637f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7deaccc4a3d8e5db424563157cf4ffb0.setIcon(icon_a1e9566f52baff3f3d0a33ffeab637f0);
+        
+    
+        var popup_ac0fa3cf3a705c530e94837401f751a0 = L.popup({"maxWidth": 250});
+
+        
+            var html_8fcd1589856f438ac6e8df31c5bad857 = $(`<div id="html_8fcd1589856f438ac6e8df31c5bad857" style="width: 100.0%; height: 100.0%;"><b>Los Glaciares National Park</b><br><a href="https://en.wikipedia.org/wiki/Los_Glaciares_National_Park" target="_blank">Learn more</a><br><i>Argentina – Natural Site</i></div>`)[0];
+            popup_ac0fa3cf3a705c530e94837401f751a0.setContent(html_8fcd1589856f438ac6e8df31c5bad857);
+        
+
+        marker_7deaccc4a3d8e5db424563157cf4ffb0.bindPopup(popup_ac0fa3cf3a705c530e94837401f751a0)
+        ;
+
+        
+    
+    
+            marker_7deaccc4a3d8e5db424563157cf4ffb0.bindTooltip(
+                `<div>
+                     Los Glaciares National Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecb67faef31caa4c123cef03b9118b01 = L.marker(
+                [-25.6833, -54.4333],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_46343986b798936d4efaeec0ddcbe37e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ecb67faef31caa4c123cef03b9118b01.setIcon(icon_46343986b798936d4efaeec0ddcbe37e);
+        
+    
+        var popup_bab270775b36ff1184c3cc2c4485f28c = L.popup({"maxWidth": 250});
+
+        
+            var html_1c9a1fad0939ddece0604816323afd05 = $(`<div id="html_1c9a1fad0939ddece0604816323afd05" style="width: 100.0%; height: 100.0%;"><b>Iguazú National Park</b><br><a href="https://en.wikipedia.org/wiki/Iguaz%C3%BA_National_Park" target="_blank">Learn more</a><br><i>Argentina – Natural Site</i></div>`)[0];
+            popup_bab270775b36ff1184c3cc2c4485f28c.setContent(html_1c9a1fad0939ddece0604816323afd05);
+        
+
+        marker_ecb67faef31caa4c123cef03b9118b01.bindPopup(popup_bab270775b36ff1184c3cc2c4485f28c)
+        ;
+
+        
+    
+    
+            marker_ecb67faef31caa4c123cef03b9118b01.bindTooltip(
+                `<div>
+                     Iguazú National Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf3e45d65541d7f7948b7613e98de777 = L.marker(
+                [-23.2, -65.35],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_67d7f711c11c1f3c4c0e698bec32c37d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf3e45d65541d7f7948b7613e98de777.setIcon(icon_67d7f711c11c1f3c4c0e698bec32c37d);
+        
+    
+        var popup_1936fff5827432f6f8bc3807b73e0075 = L.popup({"maxWidth": 250});
+
+        
+            var html_8e14f3637fcf628fcb43a1cf8bba68b7 = $(`<div id="html_8e14f3637fcf628fcb43a1cf8bba68b7" style="width: 100.0%; height: 100.0%;"><b>Quebrada de Humahuaca</b><br><a href="https://en.wikipedia.org/wiki/Quebrada_de_Humahuaca" target="_blank">Learn more</a><br><i>Argentina – Cultural Site</i></div>`)[0];
+            popup_1936fff5827432f6f8bc3807b73e0075.setContent(html_8e14f3637fcf628fcb43a1cf8bba68b7);
+        
+
+        marker_cf3e45d65541d7f7948b7613e98de777.bindPopup(popup_1936fff5827432f6f8bc3807b73e0075)
+        ;
+
+        
+    
+    
+            marker_cf3e45d65541d7f7948b7613e98de777.bindTooltip(
+                `<div>
+                     Quebrada de Humahuaca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52ba917a10df74e4c11f27b5c8cf44f6 = L.marker(
+                [-27.1167, -109.3667],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_14a055c861da8d2d97600b74840303cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_52ba917a10df74e4c11f27b5c8cf44f6.setIcon(icon_14a055c861da8d2d97600b74840303cc);
+        
+    
+        var popup_8d8ebccddebb8b4c5e1cfeeb3290bbf6 = L.popup({"maxWidth": 250});
+
+        
+            var html_2ec991ab2c44bb856bcd35e4ec848012 = $(`<div id="html_2ec991ab2c44bb856bcd35e4ec848012" style="width: 100.0%; height: 100.0%;"><b>Rapa Nui National Park (Easter Island)</b><br><a href="https://en.wikipedia.org/wiki/Rapa_Nui_National_Park" target="_blank">Learn more</a><br><i>Chile – Cultural Site</i></div>`)[0];
+            popup_8d8ebccddebb8b4c5e1cfeeb3290bbf6.setContent(html_2ec991ab2c44bb856bcd35e4ec848012);
+        
+
+        marker_52ba917a10df74e4c11f27b5c8cf44f6.bindPopup(popup_8d8ebccddebb8b4c5e1cfeeb3290bbf6)
+        ;
+
+        
+    
+    
+            marker_52ba917a10df74e4c11f27b5c8cf44f6.bindTooltip(
+                `<div>
+                     Rapa Nui National Park (Easter Island)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1c06ca7b3dc9aa01b6f5d3105aa52ff = L.marker(
+                [-42.63, -73.78],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_59fbf4d60fb1e6688920f2f87c24f753 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e1c06ca7b3dc9aa01b6f5d3105aa52ff.setIcon(icon_59fbf4d60fb1e6688920f2f87c24f753);
+        
+    
+        var popup_07379ee1ed44b5b125c1361e407c789a = L.popup({"maxWidth": 250});
+
+        
+            var html_91beafd00f763088241828bf930cd6b3 = $(`<div id="html_91beafd00f763088241828bf930cd6b3" style="width: 100.0%; height: 100.0%;"><b>Churches of Chiloé</b><br><a href="https://en.wikipedia.org/wiki/Chilo%C3%A9_Archipelago" target="_blank">Learn more</a><br><i>Chile – Cultural Site</i></div>`)[0];
+            popup_07379ee1ed44b5b125c1361e407c789a.setContent(html_91beafd00f763088241828bf930cd6b3);
+        
+
+        marker_e1c06ca7b3dc9aa01b6f5d3105aa52ff.bindPopup(popup_07379ee1ed44b5b125c1361e407c789a)
+        ;
+
+        
+    
+    
+            marker_e1c06ca7b3dc9aa01b6f5d3105aa52ff.bindTooltip(
+                `<div>
+                     Churches of Chiloé
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a692bf2fb0ba3e7ec991205bb14e979 = L.marker(
+                [-33.0472, -71.6127],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_1b9d33fd5b2998276c8a1fee9fe3a1ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a692bf2fb0ba3e7ec991205bb14e979.setIcon(icon_1b9d33fd5b2998276c8a1fee9fe3a1ca);
+        
+    
+        var popup_04c26fdde12bcd8ae77fd92cfb5cdd24 = L.popup({"maxWidth": 250});
+
+        
+            var html_f180b43983e94bc9cfef69b7cd1e1fca = $(`<div id="html_f180b43983e94bc9cfef69b7cd1e1fca" style="width: 100.0%; height: 100.0%;"><b>Valparaíso</b><br><a href="https://en.wikipedia.org/wiki/Valpara%C3%ADso" target="_blank">Learn more</a><br><i>Chile – Cultural Site</i></div>`)[0];
+            popup_04c26fdde12bcd8ae77fd92cfb5cdd24.setContent(html_f180b43983e94bc9cfef69b7cd1e1fca);
+        
+
+        marker_6a692bf2fb0ba3e7ec991205bb14e979.bindPopup(popup_04c26fdde12bcd8ae77fd92cfb5cdd24)
+        ;
+
+        
+    
+    
+            marker_6a692bf2fb0ba3e7ec991205bb14e979.bindTooltip(
+                `<div>
+                     Valparaíso
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c741564a9efc4733e6258082ed6da0c0 = L.marker(
+                [17.222, -89.6237],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_50904a50cf390c2ebc58e070837a2717 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_c741564a9efc4733e6258082ed6da0c0.setIcon(icon_50904a50cf390c2ebc58e070837a2717);
+        
+    
+        var popup_c83b66a9f2701153d0c08b6e5063ffd0 = L.popup({"maxWidth": 250});
+
+        
+            var html_904c098eec21f797d2416b428e43c9a4 = $(`<div id="html_904c098eec21f797d2416b428e43c9a4" style="width: 100.0%; height: 100.0%;"><b>Tikal National Park</b><br><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Tikal_Temple_II_North_Acropolis_2009.jpg" width="220"><br><a href="https://en.wikipedia.org/wiki/Tikal" target="_blank">Learn more</a><br><i>Guatemala – Mixed Site</i></div>`)[0];
+            popup_c83b66a9f2701153d0c08b6e5063ffd0.setContent(html_904c098eec21f797d2416b428e43c9a4);
+        
+
+        marker_c741564a9efc4733e6258082ed6da0c0.bindPopup(popup_c83b66a9f2701153d0c08b6e5063ffd0)
+        ;
+
+        
+    
+    
+            marker_c741564a9efc4733e6258082ed6da0c0.bindTooltip(
+                `<div>
+                     Tikal National Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa3d8da859afbb38a6e2be3aabca6ded = L.marker(
+                [14.556, -90.733],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_c083339b1b1fa01f7d46457a35c2a017 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa3d8da859afbb38a6e2be3aabca6ded.setIcon(icon_c083339b1b1fa01f7d46457a35c2a017);
+        
+    
+        var popup_19c7994df505b6d5d90fc824fc7eaa23 = L.popup({"maxWidth": 250});
+
+        
+            var html_636c35f0c2c0a492f96f0f7a15a5b970 = $(`<div id="html_636c35f0c2c0a492f96f0f7a15a5b970" style="width: 100.0%; height: 100.0%;"><b>Antigua Guatemala</b><br><a href="https://en.wikipedia.org/wiki/Antigua_Guatemala" target="_blank">Learn more</a><br><i>Guatemala – Cultural Site</i></div>`)[0];
+            popup_19c7994df505b6d5d90fc824fc7eaa23.setContent(html_636c35f0c2c0a492f96f0f7a15a5b970);
+        
+
+        marker_fa3d8da859afbb38a6e2be3aabca6ded.bindPopup(popup_19c7994df505b6d5d90fc824fc7eaa23)
+        ;
+
+        
+    
+    
+            marker_fa3d8da859afbb38a6e2be3aabca6ded.bindTooltip(
+                `<div>
+                     Antigua Guatemala
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a76602f52bf6bd44a1ea7ba8611948ae = L.marker(
+                [23.133, -82.383],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_930ebf46d72d728ca88707a2b92b17f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a76602f52bf6bd44a1ea7ba8611948ae.setIcon(icon_930ebf46d72d728ca88707a2b92b17f7);
+        
+    
+        var popup_8dc64ac6e7c2c6b7b62094ba8c49a62b = L.popup({"maxWidth": 250});
+
+        
+            var html_659d2a98c0007ae810ca391c2ee27757 = $(`<div id="html_659d2a98c0007ae810ca391c2ee27757" style="width: 100.0%; height: 100.0%;"><b>Old Havana and its Fortification System</b><br><a href="https://en.wikipedia.org/wiki/Old_Havana" target="_blank">Learn more</a><br><i>Cuba – Cultural Site</i></div>`)[0];
+            popup_8dc64ac6e7c2c6b7b62094ba8c49a62b.setContent(html_659d2a98c0007ae810ca391c2ee27757);
+        
+
+        marker_a76602f52bf6bd44a1ea7ba8611948ae.bindPopup(popup_8dc64ac6e7c2c6b7b62094ba8c49a62b)
+        ;
+
+        
+    
+    
+            marker_a76602f52bf6bd44a1ea7ba8611948ae.bindTooltip(
+                `<div>
+                     Old Havana and its Fortification System
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94c86a7429ce850c8e7f4e326f9ffa79 = L.marker(
+                [22.6184, -83.7102],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_f109a4857b231a92a9815c213eb3918b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94c86a7429ce850c8e7f4e326f9ffa79.setIcon(icon_f109a4857b231a92a9815c213eb3918b);
+        
+    
+        var popup_bdbca91851e96c9e3ec23bb750e489f4 = L.popup({"maxWidth": 250});
+
+        
+            var html_5a6682a98f8dbcf4c0f0538f9b3b0d1d = $(`<div id="html_5a6682a98f8dbcf4c0f0538f9b3b0d1d" style="width: 100.0%; height: 100.0%;"><b>Viñales Valley</b><br><a href="https://en.wikipedia.org/wiki/Vi%C3%B1ales_Valley" target="_blank">Learn more</a><br><i>Cuba – Cultural Site</i></div>`)[0];
+            popup_bdbca91851e96c9e3ec23bb750e489f4.setContent(html_5a6682a98f8dbcf4c0f0538f9b3b0d1d);
+        
+
+        marker_94c86a7429ce850c8e7f4e326f9ffa79.bindPopup(popup_bdbca91851e96c9e3ec23bb750e489f4)
+        ;
+
+        
+    
+    
+            marker_94c86a7429ce850c8e7f4e326f9ffa79.bindTooltip(
+                `<div>
+                     Viñales Valley
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4389a7d4932bf0c1e2e83e821b7cec9 = L.marker(
+                [-16.5542, -68.6733],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_14042eb7a71cfdb5d965780115c4847f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d4389a7d4932bf0c1e2e83e821b7cec9.setIcon(icon_14042eb7a71cfdb5d965780115c4847f);
+        
+    
+        var popup_d273cb6609961976db976cb26542eeae = L.popup({"maxWidth": 250});
+
+        
+            var html_06a5294f89c44e93874a671fd9962967 = $(`<div id="html_06a5294f89c44e93874a671fd9962967" style="width: 100.0%; height: 100.0%;"><b>Tiwanaku</b><br><a href="https://en.wikipedia.org/wiki/Tiwanaku" target="_blank">Learn more</a><br><i>Bolivia – Cultural Site</i></div>`)[0];
+            popup_d273cb6609961976db976cb26542eeae.setContent(html_06a5294f89c44e93874a671fd9962967);
+        
+
+        marker_d4389a7d4932bf0c1e2e83e821b7cec9.bindPopup(popup_d273cb6609961976db976cb26542eeae)
+        ;
+
+        
+    
+    
+            marker_d4389a7d4932bf0c1e2e83e821b7cec9.bindTooltip(
+                `<div>
+                     Tiwanaku
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28163023cca35c66cab187f1edec9c75 = L.marker(
+                [-13.75, -60.75],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_3d5c19f4ae4e751b345d16eaa5373d56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_28163023cca35c66cab187f1edec9c75.setIcon(icon_3d5c19f4ae4e751b345d16eaa5373d56);
+        
+    
+        var popup_7d0b85b0ad0c68c6a262f25686c73c01 = L.popup({"maxWidth": 250});
+
+        
+            var html_98739ef190632b3230a44a59018aeaac = $(`<div id="html_98739ef190632b3230a44a59018aeaac" style="width: 100.0%; height: 100.0%;"><b>Noel Kempff Mercado National Park</b><br><a href="https://en.wikipedia.org/wiki/Noel_Kempff_Mercado_National_Park" target="_blank">Learn more</a><br><i>Bolivia – Natural Site</i></div>`)[0];
+            popup_7d0b85b0ad0c68c6a262f25686c73c01.setContent(html_98739ef190632b3230a44a59018aeaac);
+        
+
+        marker_28163023cca35c66cab187f1edec9c75.bindPopup(popup_7d0b85b0ad0c68c6a262f25686c73c01)
+        ;
+
+        
+    
+    
+            marker_28163023cca35c66cab187f1edec9c75.bindTooltip(
+                `<div>
+                     Noel Kempff Mercado National Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a75f6952d1aae7401707cd33a39c7543 = L.marker(
+                [17.0654, -96.7237],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_542b2ca219b6103541a0224b23a08973 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a75f6952d1aae7401707cd33a39c7543.setIcon(icon_542b2ca219b6103541a0224b23a08973);
+        
+    
+        var popup_5d2ea8be01388a881e07ff2ddd5b8313 = L.popup({"maxWidth": 250});
+
+        
+            var html_b6b4fda1e37def7f6758ec4eb652b17a = $(`<div id="html_b6b4fda1e37def7f6758ec4eb652b17a" style="width: 100.0%; height: 100.0%;"><b>Historic Centre of Oaxaca (City)</b><br><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Oaxaca_Catedral.jpg" width="220"><br><a href="https://en.wikipedia.org/wiki/Oaxaca_City" target="_blank">Learn more</a><br><i>Mexico – Cultural Site</i></div>`)[0];
+            popup_5d2ea8be01388a881e07ff2ddd5b8313.setContent(html_b6b4fda1e37def7f6758ec4eb652b17a);
+        
+
+        marker_a75f6952d1aae7401707cd33a39c7543.bindPopup(popup_5d2ea8be01388a881e07ff2ddd5b8313)
+        ;
+
+        
+    
+    
+            marker_a75f6952d1aae7401707cd33a39c7543.bindTooltip(
+                `<div>
+                     Historic Centre of Oaxaca (City)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f91e58cefa040c3a4ff4b7b4d1b9cbf = L.marker(
+                [17.0436, -96.7676],
+                {}
+            ).addTo(map_6537ba4ce6a8631a7a51a775f9e8deba);
+        
+    
+            var icon_79292500b5b8d1693dd8c42419d23a48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f91e58cefa040c3a4ff4b7b4d1b9cbf.setIcon(icon_79292500b5b8d1693dd8c42419d23a48);
+        
+    
+        var popup_66fb0205c910e797ae8db97f8ed1d983 = L.popup({"maxWidth": 250});
+
+        
+            var html_b38421779ee7af6c75c2c705f84b3a81 = $(`<div id="html_b38421779ee7af6c75c2c705f84b3a81" style="width: 100.0%; height: 100.0%;"><b>Monte Albán</b><br><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Monte_Alb%C3%A1n_plataforma_sur.jpg" width="220"><br><a href="https://en.wikipedia.org/wiki/Monte_Alb%C3%A1n" target="_blank">Learn more</a><br><i>Mexico – Cultural Site</i></div>`)[0];
+            popup_66fb0205c910e797ae8db97f8ed1d983.setContent(html_b38421779ee7af6c75c2c705f84b3a81);
+        
+
+        marker_1f91e58cefa040c3a4ff4b7b4d1b9cbf.bindPopup(popup_66fb0205c910e797ae8db97f8ed1d983)
+        ;
+
+        
+    
+    
+            marker_1f91e58cefa040c3a4ff4b7b4d1b9cbf.bindTooltip(
+                `<div>
+                     Monte Albán
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
